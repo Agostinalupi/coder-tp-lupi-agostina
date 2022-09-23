@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* header */
+.margenrosa {
+    height: 30px;
+    background-color: #e0c9c9;
+}
+
+.logoheader {
+    margin-top: 30px;
+   
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1rem;
+    background-color: #f8f1f1;
+    color: black;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}    
+
+ul {
+    list-style: none;
+}
+
+/* Main */
+
+/* Portada-index */
+
+.h1portada {
+    margin-left: 20%;
+    margin-top: 20px;
+    width: 80%;
+    height: auto;    
+    text-align: center;
+    font-size: 1rem;
+    background-color: #f8f1f1;
+    color: rgb(63, 62, 62);
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;    
+}
+
+.presentacionportada {
+    display: flex;
+    margin-left: 20%;
+    width: 50%;
+    margin-top: 20px;    
+}
+
+.imagenportada {
+    width: 65.3vh; 
+    }
+
+.textoportada {
+    border: 1px solid #efa3ef;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(63, 62, 62);
+    text-align: justify;
+    padding: 30px;
+}
+
+.h2portada {
+    margin-left: 20%;
+    margin-top: 20px;
+    width: 130.6vh;
+    height: auto;    
+    text-align: center;
+    font-size: 1rem;
+    background-color: #f8f1f1;
+    color: rgb(63, 62, 62);
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+.serviciosportada {
+    display: flex;    
+    flex-direction: row;
+    margin-left: 20%;
+    width: 130.6vh;
+    height: 600px;
+    margin-top: 20px;
+    background-color: #f3f1f1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tarjetaservicios {
+    width: 383px;
+    height: 200px;    
+}
+
+.servicios__image {
+    width: 383px;
+    height: 200px;
+}
+
+.servicios__title {
+    width: 383px;
+    height: 200px; 
+    color: rgb(63, 62, 62);
+    font-size: 1.7rem;
+    padding-top: 85px;
+    padding-left: 110px;
+}
+
+/* Productos-manos y pies-peluqueria-cejas y pestanas */
+
+.Productos__title {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(63, 62, 62);
+    border: 2px solid #f8f1f1;
+    width: 300px;
+    margin: 30px auto;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.divtarjetas {    
+    width: 90%;    
+    margin: 60px auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: rgb(63, 62, 62);
+    font-weight: bolder;
+
+}
+
+.tarjetaproductos {    
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    padding: 10px;    
+}
+    
+.tarjetaproductos__img {
+    width: 100%;
+    height: 230px;
+    border-radius: 10%;
+    padding-bottom: 5px;
+}
+
+
+/* Formulario-contacto */
+
+.h1contacto{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(63, 62, 62);
+    border: 2px solid #f8f1f1;
+    width: 300px;
+    margin: 30px auto auto auto;
+    padding: 20px; 
+    font-size: 1.5rem;
+}
+
+.h2contacto {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(63, 62, 62);
+    font-size: 1.2rem;
+    text-decoration: underline;
+
+
+
+}
+
+.contacto {
+    margin: auto;
+
+
+}
+.contenedorformulario {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    }
+
+.tarjetaformulario {
+    width: 50%;
+    height: 80px;
+    background-color: #f3dbf3;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #3f3e3e;
+    display: inline-block;
+    border-radius: 4px;    
+}
+
+input {
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    width: 130px;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+.novedades {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(63, 62, 62);
+    display: inline-block;
+    font-size: 0.7rem; 
+    text-align: center;
+    margin-right: 7px auto;
+    
+}
+
+.contactodirecciones {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.direccion {
+    text-align: center;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(63, 62, 62);
+    width: 100%;
+}
+
+iframe {
+    margin: 30px auto;    
+    width: 100%;
+    
+}
+
+
+/* Footer */
+
+.logofooter {    
+    margin-left: 30px;
+    margin-bottom: 20px;         
+}
+
+.footerwhatsaap {    
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;   
+    margin: auto;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(63, 62, 62);
+}
+
+.whatsaap {    
+    padding-left: 10px; 
+}
+
+.redessociales {
+    width: 100px;
+    display: flex;
+    font-size: 2rem;
+    margin: auto;
+    justify-content: space-around;
+}
+
+
+@media (min-width: 600px) {
+.tarjetaproductos__img {
+    width: 90%;
+    }
+
+}
+
+@media (min-width: 768px) {
+.divtarjetas { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    font-size: 0.9rem;
+}
+
+.tarjetaproductos {
+    width: 45%;
+    margin: 0;
+}
+
+.tarjetaproductos__img {
+    height: 220px;
+}
+
+.contenedorformulario {
+    max-width: 500px;
+}
+
+.contactodirecciones {
+    max-width: 500px;
+}
+
+.footerwhatsaap {
+    font-size: 1.5rem;
+
+}
+    
+}
+
+@media (min-width: 1024px) {
+.divtarjetas {
+    margin: auto;
+}    
+
+.tarjetaproductos {
+    width: 40%;
+    margin: 0;
+}
+
+.tarjetaproductos__img {
+    height: 210px;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorformulario {
+    max-width: 400px;
+}
+
+.contactodirecciones {
+    max-width: 500px;
+}
+}
+
+@media (min-width: 1250px) {
+.divtarjetas {
+    max-width: 1700px;  
+}
+
+.tarjetaproductos {
+    width: 25%;
+    margin: 0;
+}
+
+.contacto {
+    max-width: 1200px;
+}
+}
+    
+
+
+
+
+
+
