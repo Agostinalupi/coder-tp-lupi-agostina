@@ -2,44 +2,24 @@
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
+    
 }
 
-/* header */
-.margenrosa {
-    height: 30px;
-    background-color: #e0c9c9;
-}
-
-.logoheader {
-    margin-top: 30px;
-   
-}
-
-.nav ul {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 1rem;
-    background-color: #f8f1f1;
-    color: black;
-    padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-}    
-
-ul {
-    list-style: none;
-}
 
 /* Main */
+
+/* Navbar */
+.navbar {
+    background-color: #f1e3f1;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    color: #5a3e3e;
+}
 
 /* Portada-index */
 
 .h1portada {
-    margin-left: 20%;
-    margin-top: 20px;
+    margin: 20px auto;
     width: 80%;
     height: auto;    
     text-align: center;
@@ -53,8 +33,8 @@ ul {
 
 .presentacionportada {
     display: flex;
-    margin-left: 20%;
-    width: 50%;
+    margin: auto;
+    width: 80%;
     margin-top: 20px;    
 }
 
@@ -123,17 +103,15 @@ ul {
     color: rgb(63, 62, 62);
     border: 2px solid #f8f1f1;
     width: 300px;
-    margin: 30px auto;
+    margin: 50px auto;
     padding: 20px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .divtarjetas {    
     width: 90%;    
     margin: 60px auto;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    color: rgb(63, 62, 62);
     font-weight: bolder;
 
 }
@@ -142,7 +120,17 @@ ul {
     text-align: center;
     width: 65%;
     margin: auto;
-    padding: 10px;    
+    color: rgb(63, 62, 62);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+  
+}
+
+.tarjeta__title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    color: rgb(63, 62, 62);
+
 }
     
 .tarjetaproductos__img {
@@ -152,7 +140,6 @@ ul {
     padding-bottom: 5px;
 }
 
-
 /* Formulario-contacto */
 
 .h1contacto{
@@ -161,7 +148,7 @@ ul {
     color: rgb(63, 62, 62);
     border: 2px solid #f8f1f1;
     width: 300px;
-    margin: 30px auto auto auto;
+    margin: 30px auto;
     padding: 20px; 
     font-size: 1.5rem;
 }
@@ -174,14 +161,10 @@ ul {
     font-size: 1.2rem;
     text-decoration: underline;
 
-
-
 }
 
 .contacto {
     margin: auto;
-
-
 }
 .contenedorformulario {
     width: 60%;
@@ -240,7 +223,7 @@ input {
 }
 
 iframe {
-    margin: 30px auto;    
+    margin: auto;    
     width: 100%;
     
 }
@@ -279,6 +262,10 @@ iframe {
 
 
 @media (min-width: 600px) {
+
+.divtarjetas {
+    max-width: 500px;
+}  
 .tarjetaproductos__img {
     width: 90%;
     }
@@ -291,12 +278,19 @@ iframe {
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 800px;
-    font-size: 0.9rem;
+    
 }
 
 .tarjetaproductos {
     width: 45%;
     margin: 0;
+    font-size: 1.1rem;
+}
+
+.tarjeta__title {
+    font-size: 1.4rem;
+  
+
 }
 
 .tarjetaproductos__img {
@@ -321,6 +315,7 @@ iframe {
 @media (min-width: 1024px) {
 .divtarjetas {
     margin: auto;
+    font-size: 1rem;
 }    
 
 .tarjetaproductos {
@@ -341,17 +336,18 @@ iframe {
 }
 
 .contenedorformulario {
-    max-width: 400px;
+    max-width: 450px;
+    margin-top: 125px;
 }
 
 .contactodirecciones {
-    max-width: 500px;
+    max-width: 450px;
 }
 }
 
 @media (min-width: 1250px) {
 .divtarjetas {
-    max-width: 1700px;  
+    max-width: 1400px;  
 }
 
 .tarjetaproductos {
