@@ -1,0 +1,29 @@
+.tipografia {
+    font-family: 'Roboto Slab', serif;
+    color:rgb(182, 123, 182);
+}
+
+.animacion {
+   transition-duration: 2s;
+   animation-name: movimiento;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+}
+
+.animacion:hover {    
+    color:rgb(182, 123, 182);
+}
+
+@keyframes movimiento {
+0% {
+    transform: translate(0, 0);
+    background-color: rgb(10, 1, 10);
+    color: violet;
+    border-radius: 10px;
+    }
+
+50% {
+    transform: translate(50px);
+}
+
+}

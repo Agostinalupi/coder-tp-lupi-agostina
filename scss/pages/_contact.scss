@@ -1,0 +1,102 @@
+.h1contacto {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color:rgb(182, 123, 182);
+    border: 2px solid #f8f1f1;
+    width: 250px;
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.h2contacto {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Roboto Slab', serif;
+    color:rgb(182, 123, 182);
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contacto {
+    margin: auto;
+}
+
+.contactodirecciones {
+    width: 60%;
+    text-align: center;
+    margin: auto;    
+}
+
+.direccion {
+    text-align: center;
+    margin: auto;
+    font-family: 'Roboto Slab', serif;
+    color:rgb(182, 123, 182);
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.contactohorarios {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+iframe {
+    margin: auto;    
+    width: 100%;    
+}
+
+@media (min-width: 600px) {
+
+    
+    input {
+        width: 130px;
+    }
+    }
+
+@media (min-width: 768px) {
+            
+    .h1contacto {
+        font-size: 1.5rem;
+        width: 300px;
+    }
+        
+    .contenedorformulario {
+        max-width: 500px;
+    }
+        
+    .contactodirecciones {
+        max-width: 500px;
+    }
+                         
+    }
+        
+    @media (min-width: 1024px) {
+        
+    .contacto {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+        
+    .contenedorformulario {
+        max-width: 450px;
+        margin-top: 125px;
+    }
+        
+    .contactodirecciones {
+        max-width: 450px;
+    }
+    }
+        
+    @media (min-width: 1250px) {
+        
+    .contacto {
+        max-width: 1200px;
+    }
+    }        

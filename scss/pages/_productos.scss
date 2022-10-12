@@ -1,0 +1,108 @@
+.Productos__title {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color:rgb(182, 123, 182);
+    border: 2px solid #f8f1f1;
+    width: 250px;
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+
+.divtarjetas {    
+    width: 90%;    
+    margin: 60px auto;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+}
+
+.tarjetaproductos {    
+    text-align: center;
+    width: 65%;
+    margin: 20px auto;
+    color:rgb(182, 123, 182);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+  
+}
+
+.tarjeta__title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.4rem;
+    color:rgb(182, 123, 182);
+}
+    
+.tarjetaproductos__img {
+    width: 100%;    
+    border-radius: 10%;
+    padding-bottom: 5px;
+}
+
+@media (min-width: 600px) {
+
+    .divtarjetas {
+        max-width: 500px;
+    }  
+    .tarjetaproductos__img {
+        width: 90%;
+        }
+    
+    }
+
+ @media (min-width: 768px) {
+.divtarjetas { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin-bottom: 100px;
+    margin-top: 70px;    
+}
+
+.tarjetaproductos {
+    width: 45%;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.productos__title {
+    font-size: 1.5rem;
+    width: 300px;
+}
+
+.tarjeta__title {
+    font-size: 1.4rem; 
+}  
+
+}
+
+@media (min-width: 1024px) {
+.divtarjetas {
+    margin: auto;
+    font-size: 1rem;
+    margin-bottom: 120px;
+}    
+    
+.tarjetaproductos {
+    width: 40%;
+    margin: 0;
+}
+    
+}
+    
+@media (min-width: 1250px) {
+.divtarjetas {
+    max-width: 1400px;  
+    margin-bottom: 150px;
+}
+    
+.tarjetaproductos {
+    width: 25%;
+    margin: 0;
+}
+    
+
+}
+    
