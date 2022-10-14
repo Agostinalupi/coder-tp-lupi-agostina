@@ -1,6 +1,5 @@
-.tipografia {
-    font-family: 'Roboto Slab', serif;
-    color:rgb(182, 123, 182);
+.contenedorAnimacion {
+    overflow: hidden;
 }
 
 .animacion {
@@ -8,17 +7,16 @@
    animation-name: movimiento;
    animation-duration: 5s;
    animation-iteration-count: infinite;
-}
-
-.animacion:hover {    
-    color:rgb(182, 123, 182);
+   &:hover {
+    color:$color-primario;
+   }
 }
 
 @keyframes movimiento {
 0% {
     transform: translate(0, 0);
     background-color: rgb(10, 1, 10);
-    color: violet;
+    color:$color-primario;
     border-radius: 10px;
     }
 

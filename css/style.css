@@ -4,8 +4,25 @@
   box-sizing: border-box;
 }
 
+.primaria {
+  font-family: "Roboto Slab", serif;
+}
+
+.secundaria {
+  font-family: "Lobster", cursive;
+}
+
+.terciaria {
+  font-family: "Pacifico", cursive;
+}
+
 body {
-  background-color: #5a3e3e;
+  background-color: #6f4a4a;
+}
+
+a:hover {
+  font-weight: bold;
+  font-style: italic;
 }
 
 .navbar {
@@ -13,11 +30,6 @@ body {
   font-family: "Roboto Slab", serif;
   font-size: 1rem;
   color: #5a3e3e;
-}
-
-a:hover {
-  font-weight: bold;
-  font-style: italic;
 }
 
 footer {
@@ -103,26 +115,46 @@ input {
   margin-right: 7px auto;
 }
 
-.cardestilo {
+.card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin: 5px;
+  text-align: center;
   box-shadow: 5px 5px rgb(48, 36, 48);
 }
-
-.cardestilo:hover {
+.card:hover {
   transform: translateY(-10px);
 }
+.card__img {
+  width: 100%;
+}
+.card__title {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.2rem;
+  padding-top: 5px;
+  color: rgb(51, 50, 51);
+}
 
-.botonportada {
-  background-color: violet;
+@media (min-width: 1024px) {
+  .card {
+    width: 300px;
+    height: 450px;
+  }
+}
+.card__buttons {
+  background-color: rgb(182, 123, 182);
   border-radius: 10%;
   font-family: "Roboto Slab", serif;
   font-weight: bold;
   font-size: 1.5rem;
-  margin-left: 25px;
 }
 
-.tipografia {
-  font-family: "Roboto Slab", serif;
-  color: rgb(182, 123, 182);
+.contenedorAnimacion {
+  overflow: hidden;
 }
 
 .animacion {
@@ -131,7 +163,6 @@ input {
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
-
 .animacion:hover {
   color: rgb(182, 123, 182);
 }
@@ -140,14 +171,14 @@ input {
   0% {
     transform: translate(0, 0);
     background-color: rgb(10, 1, 10);
-    color: violet;
+    color: rgb(182, 123, 182);
     border-radius: 10px;
   }
   50% {
     transform: translate(50px);
   }
 }
-.Productos__title {
+.productos__title {
   text-align: center;
   font-family: "Roboto Slab", serif;
   color: rgb(182, 123, 182);
@@ -170,21 +201,23 @@ input {
   text-align: center;
   width: 65%;
   margin: 20px auto;
-  color: rgb(182, 123, 182);
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
 }
-
-.tarjeta__title {
+.tarjetaproductos__title {
   font-family: "Roboto Slab", serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: rgb(182, 123, 182);
+  font-weight: bold;
 }
-
 .tarjetaproductos__img {
   width: 100%;
   border-radius: 10%;
   padding-bottom: 5px;
+}
+.tarjetaproductos__precio {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.3rem;
+  color: rgb(182, 123, 182);
+  font-weight: bold;
 }
 
 @media (min-width: 600px) {
@@ -209,12 +242,12 @@ input {
     margin: 0;
     font-size: 1.1rem;
   }
+  .tarjetaproductos__title {
+    font-size: 1.4rem;
+  }
   .productos__title {
     font-size: 1.5rem;
     width: 300px;
-  }
-  .tarjeta__title {
-    font-size: 1.4rem;
   }
 }
 @media (min-width: 1024px) {

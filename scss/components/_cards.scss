@@ -1,8 +1,32 @@
-.cardestilo {
-    box-shadow: 5px 5px rgb(48, 36, 48);    
+
+.card {
+    width: 250px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin: 5px;
+        text-align: center;
+    box-shadow: 5px 5px rgb(48, 36, 48); 
+    &:hover {
+        transform: translateY(-10px);
+    } 
+    &__img {
+        width: 100%;
+    }
+    &__title {
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.2rem;
+        padding-top: 5px;
+        color: $color-secundario;
+    }
+      
 }
 
-.cardestilo:hover {
-    transform: translateY(-10px);
-
+@media (min-width: 1024px) {
+.card {
+    width: 300px;
+    height: 450px;
+    }
 }

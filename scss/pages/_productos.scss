@@ -1,7 +1,7 @@
-.Productos__title {
+.productos__title {
     text-align: center;
     font-family: 'Roboto Slab', serif;
-    color:rgb(182, 123, 182);
+    color:$color-primario;
     border: 2px solid #f8f1f1;
     width: 250px;
     margin: 50px auto;
@@ -22,22 +22,25 @@
     text-align: center;
     width: 65%;
     margin: 20px auto;
-    color:rgb(182, 123, 182);
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-  
-}
-
-.tarjeta__title {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.4rem;
-    color:rgb(182, 123, 182);
-}
     
-.tarjetaproductos__img {
-    width: 100%;    
-    border-radius: 10%;
-    padding-bottom: 5px;
+    &__title {
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.6rem;
+        color:$color-primario;
+        font-weight: bold;
+    }
+    &__img {
+        width: 100%;    
+        border-radius: 10%;
+        padding-bottom: 5px;
+    }
+    &__precio {
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.3rem;
+        color:$color-primario;
+        font-weight: bold;
+    }
+      
 }
 
 @media (min-width: 600px) {
@@ -47,9 +50,9 @@
     }  
     .tarjetaproductos__img {
         width: 90%;
-        }
-    
     }
+    
+}
 
  @media (min-width: 768px) {
 .divtarjetas { 
@@ -65,17 +68,16 @@
     width: 45%;
     margin: 0;
     font-size: 1.1rem;
+    &__title {
+        font-size: 1.4rem; 
+    }
 }
 
 .productos__title {
     font-size: 1.5rem;
     width: 300px;
 }
-
-.tarjeta__title {
-    font-size: 1.4rem; 
-}  
-
+ 
 }
 
 @media (min-width: 1024px) {
@@ -102,7 +104,7 @@
     width: 25%;
     margin: 0;
 }
-    
+  
 
 }
     
