@@ -25,6 +25,10 @@ a:hover {
   font-style: italic;
 }
 
+a:visited {
+  color: #6f4a4a;
+}
+
 .navbar {
   background-color: #f8e2f8;
   font-family: "Roboto Slab", serif;
