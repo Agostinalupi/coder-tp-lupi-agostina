@@ -16,23 +16,19 @@
         width: 100%;    
         border-radius: 10%;
         padding-bottom: 5px;
-    }   
-      
+    }       
 }
 
 @media (min-width: 600px) {
-
     .divtarjetas {
         max-width: 500px;
     }  
     .tarjetaproductos__img {
         width: 90%;
-    }
-    
+    }    
 }
 
- @media (min-width: 768px) {
-    
+ @media (min-width: 768px) {    
 .divtarjetas { 
     display: flex;
     flex-wrap: wrap;
@@ -49,8 +45,7 @@
 
 .productos__title {
     width: 300px;
-}
- 
+} 
 }
 
 @media (min-width: 1024px) {
@@ -62,8 +57,7 @@
 .tarjetaproductos {
     width: 40%;
     margin: 0;
-}
-    
+}    
 }
     
 @media (min-width: 1250px) {
@@ -76,7 +70,5 @@
     width: 25%;
     margin: 0;
 }
-  
-
 }
     
