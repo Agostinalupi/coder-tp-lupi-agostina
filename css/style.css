@@ -206,6 +206,7 @@ a:hover {
   font-weight: bold;
   font-style: italic;
   transform: scale(1.2);
+  margin-left: 40px;
 }
 
 a:visited {
