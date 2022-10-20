@@ -45,17 +45,14 @@
   font-family: "source Sans Pro";
   font-weight: bold;
   font-size: 1.5rem;
-  color: rgb(248, 226, 248);
-}
-
-a:hover {
-  font-weight: bold;
-  font-style: italic;
-  transform: scale(1.2);
-}
-
-a:visited {
   color: rgb(51, 50, 51);
+}
+
+.tarjeta__buttons {
+  font-family: "source Sans Pro";
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: violet;
 }
 
 .footerwhatsaap {
@@ -207,10 +204,7 @@ a:hover {
   font-style: italic;
   transform: scale(1.2);
   margin-left: 40px;
-}
-
-a:visited {
-  color: #6f4a4a;
+  color: rgb(51, 50, 51);
 }
 
 .navbar {
@@ -223,25 +217,27 @@ footer {
   background-repeat: no-repeat;
   background-position-y: center;
   margin-top: 30px;
+  height: 250px;
 }
 
 .logofooter {
   margin-left: 30px;
   margin-bottom: 20px;
+  background-color: rgba(225, 208, 208, 0.749);
 }
 
 .footerwhatsaap {
   width: 50%;
   display: flex;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 10px;
   margin: auto;
   justify-content: center;
 }
 
 .whatsaap {
   padding-left: 10px;
-  color: black;
+  color: rgb(51, 50, 51);
 }
 
 .redessociales {
@@ -354,6 +350,13 @@ footer {
 .card__buttons {
   background-color: violet;
   border-radius: 10%;
+  padding: 10px;
+}
+
+.tarjeta__buttons {
+  background-color: rgb(51, 50, 51);
+  border-radius: 10%;
+  padding: 10px;
 }
 
 .contenedorAnimacion {
