@@ -1,44 +1,51 @@
 footer {
-    background-image: url(../images/footer.jpg);
+    background-image: url(../images/portada4.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
     margin-top: 30px; 
-    height: 250px;   
+    height: 190px;             
 }
 
 .logofooter {    
     margin-left: 30px;
-    margin-bottom: 20px;  
-    background-color: rgba(225, 208, 208, 0.749);         
+    margin-bottom: 20px;
+    &:hover {
+        padding-left: 20px;
+    }     
 }
 
-.footerwhatsaap {    
-    width: 50%;
-    display: flex;
-    align-items: center;
+.whatsapp {    
+    width: 70%;
+    @include dflex(row, center, center);
     padding-top: 10px;   
     margin: auto;
-    justify-content: center;
-      
+               
 }
 
-.whatsaap {    
-    padding-left: 10px; 
-    color: $color-secundario; 
-    
+.cecularWhatsapp {    
+    padding-left: 20px;      
 }
 
 .redessociales {
     width: 100px;
-    display: flex;
-    font-size: 2rem;
+    @include dflex(row, space-around, center);
+    font-size: 2.3rem;
     margin: auto;
-    justify-content: space-around;
+    &:hover {
+        padding-left: 20px;
+        transform: scale(1.1);
+    }
 }
 
-@media (min-width: 768px) {
-.footerwhatsaap {
-    font-size: 1.5rem;
+@media (min-width: 1024px) {
+    .redessociales {
+        font-size: 2.5rem;
+        
+    }
+
 }
-}
+
+
+
+

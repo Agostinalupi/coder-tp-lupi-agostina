@@ -16,7 +16,10 @@
         width: 100%;    
         border-radius: 10%;
         padding-bottom: 5px;
-    }       
+    }
+    &:hover {
+        transform: translateY(-15px);
+    }        
 }
 
 @media (min-width: 600px) {
@@ -30,9 +33,8 @@
 
  @media (min-width: 768px) {    
 .divtarjetas { 
-    display: flex;
+    @include dflex(row, space-around, center);
     flex-wrap: wrap;
-    justify-content: space-around;
     max-width: 800px;
     margin-bottom: 100px;
     margin-top: 70px;    

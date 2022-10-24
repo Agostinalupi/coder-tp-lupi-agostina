@@ -1,19 +1,28 @@
-.navbar {
+.menu {
     background-color: $color-terciario;
-    font-family: $font-family-lato;
+    font-family: $font-family-opensans;
     font-size: 1rem;
-    color: $color-secundario;
+    color: $color-cuarto;
+    font-weight: bold;
 }
 
-.h1index {
+.menuEnlace:hover {
+    font-weight: bold;
+    font-style: italic; 
+    transform: scale(1.1);
+    margin-left: 30px;
+    color: $color-cuarto;
+}
+
+.tituloIndex {
     font-family: $font-family-lobster;    
     text-align: center;
     font-weight: bold;
-    color: violet;
+    color: $color-primario;
     font-size: 1.8rem;
 }
 
-.fraseindex {
+.fraseIndex {
     font-family: $font-family-sourcesans;
     color: $color-terciario;
     text-align: center;
@@ -21,10 +30,10 @@
 }
 
 @media (min-width: 1024px) {
-    .h1index {
+    .tituloIndex {
         font-size: 3rem;
     }
-    .fraseindex {
+    .fraseIndex {
         font-size: 2.2rem;
     }   
 }
@@ -41,8 +50,14 @@
 .card__buttons {
     font-family: $font-family-sourcesans;
     font-weight: bold;
-    font-size: 1.5rem;    
+    font-size: 1.4rem;    
     color: $color-secundario;
+    &:hover {
+        font-weight: bold;
+        font-style: italic; 
+        transform: scale(1.1);
+        color: $color-cuarto;
+    }
 } 
 
 .tarjeta__buttons {
@@ -50,15 +65,39 @@
     font-weight: bold;
     font-size: 1.3rem;    
     color:$color-primario;
+    &:hover {
+        font-weight: bold;
+        font-style: italic; 
+        transform: scale(1.1);
+        color: $color-terciario;
+    }
 } 
 
-.footerwhatsaap {      
-    font-size: 1rem;
-    font-family: 'Roboto Slab', serif;
-    color: $color-secundario;
-    font-weight: bold;
+.whatsapp {
+    font-size: 1.3rem;
 }
 
+.celularWhatsapp {
+    color: $color-secundario;
+    font-size: 1.3rem;
+}
+
+
+@media (min-width: 768px) {
+    .celularWhatsapp {
+        font-size: 1.5rem;    
+        
+    }
+    .whatsapp {
+        font-size: 1.5rem;
+        &:hover {
+            font-weight: bold;
+            font-style: italic; 
+            transform: scale(1.2);
+            
+        }
+    }
+}
 .productos__title {
     text-align: center;
     font-family: $font-family-opensans;
@@ -116,16 +155,11 @@
 }   
 }
 
-.h1contacto {
-    text-align: center;
-    font-family: $font-family-opensans;
-    color:$color-primario;
-    border: 2px solid $color-terciario;
-    font-size: 1.3rem;
-    font-weight: bold;
+.contacto__title {
+@extend.productos__title
 }
 
-.h2contacto {
+.consultaContacto {
     text-align: center;
     font-family: $font-family-lato;
     color:$color-primario;
@@ -134,7 +168,7 @@
     font-weight: bold;
 }
 
-.contactoformulario {
+.formularioContacto {
     font-weight: bold;
     font-family: $font-family-opensans;
     color:$color-primario;
@@ -159,17 +193,14 @@
 }
 
 .inputmensaje {
-    font-size: .8rem;
-    font-family: $font-family-opensans;
-    color:$color-secundario;
-    text-align: center;
+@extend.input;
 }
 
 .novedades {
     font-family: $font-family-opensans;
     color:$color-terciario;
     font-size: 1.2rem; 
-    text-align: center;     
+    text-align: center;       
 }
 
 .direccion {
@@ -180,26 +211,23 @@
     text-align: center;
 }
 
-.contactohorarios {
+.horariosContacto {
     text-decoration: underline;
     font-weight: bold;
 }
 
 @media (min-width: 768px) {
             
-    .h1contacto {
+    .direccion {         
+        font-size: 1.4rem;            
+        }        
+    .consultasContacto {
         font-size: 1.5rem;
-        }
-
-    .direccion {
-            
-        font-size: 1.4rem;
-            
-        } 
-        
-    .contactoformulario {
-        font-size: 1.4rem;
     }
+    .formularioContacto {
+        font-size: 1.3rem;
+    }
+    
 }
 
 

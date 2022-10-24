@@ -1,18 +1,12 @@
 body {
-    background-color: #6f4a4a;
+    background-color: $color-cuarto;
 }
 
 a {
     text-decoration: none;
 }
 
-a:hover {
-    font-weight: bold;
-    font-style: italic; 
-    transform: scale(1.2);
-    margin-left: 40px;
-    color: $color-secundario;
-}
+
 
 
 

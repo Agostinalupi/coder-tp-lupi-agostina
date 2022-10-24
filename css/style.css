@@ -4,14 +4,23 @@
   box-sizing: border-box;
 }
 
-.navbar {
+.menu {
   background-color: rgb(248, 226, 248);
-  font-family: "lato", sans-serif;
+  font-family: "open Sans";
   font-size: 1rem;
-  color: rgb(51, 50, 51);
+  color: rgb(111, 74, 74);
+  font-weight: bold;
 }
 
-.h1index {
+.menuEnlace:hover {
+  font-weight: bold;
+  font-style: italic;
+  transform: scale(1.1);
+  margin-left: 30px;
+  color: rgb(111, 74, 74);
+}
+
+.tituloIndex {
   font-family: "lobster", cursive;
   text-align: center;
   font-weight: bold;
@@ -19,7 +28,7 @@
   font-size: 1.8rem;
 }
 
-.fraseindex {
+.fraseIndex {
   font-family: "source Sans Pro";
   color: rgb(248, 226, 248);
   text-align: center;
@@ -27,10 +36,10 @@
 }
 
 @media (min-width: 1024px) {
-  .h1index {
+  .tituloIndex {
     font-size: 3rem;
   }
-  .fraseindex {
+  .fraseIndex {
     font-size: 2.2rem;
   }
 }
@@ -44,8 +53,14 @@
 .card__buttons {
   font-family: "source Sans Pro";
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: rgb(51, 50, 51);
+}
+.card__buttons:hover {
+  font-weight: bold;
+  font-style: italic;
+  transform: scale(1.1);
+  color: rgb(111, 74, 74);
 }
 
 .tarjeta__buttons {
@@ -54,15 +69,36 @@
   font-size: 1.3rem;
   color: violet;
 }
-
-.footerwhatsaap {
-  font-size: 1rem;
-  font-family: "Roboto Slab", serif;
-  color: rgb(51, 50, 51);
+.tarjeta__buttons:hover {
   font-weight: bold;
+  font-style: italic;
+  transform: scale(1.1);
+  color: rgb(248, 226, 248);
 }
 
-.productos__title {
+.whatsapp {
+  font-size: 1.3rem;
+}
+
+.celularWhatsapp {
+  color: rgb(51, 50, 51);
+  font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+  .celularWhatsapp {
+    font-size: 1.5rem;
+  }
+  .whatsapp {
+    font-size: 1.5rem;
+  }
+  .whatsapp:hover {
+    font-weight: bold;
+    font-style: italic;
+    transform: scale(1.2);
+  }
+}
+.productos__title, .contacto__title {
   text-align: center;
   font-family: "open Sans";
   color: violet;
@@ -102,7 +138,7 @@
   .tarjetaproductos__precio {
     font-size: 1.5rem;
   }
-  .productos__title {
+  .productos__title, .contacto__title {
     font-size: 1.5rem;
   }
 }
@@ -111,16 +147,7 @@
     font-size: 1rem;
   }
 }
-.h1contacto {
-  text-align: center;
-  font-family: "open Sans";
-  color: violet;
-  border: 2px solid rgb(248, 226, 248);
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.h2contacto {
+.consultaContacto {
   text-align: center;
   font-family: "lato", sans-serif;
   color: violet;
@@ -129,7 +156,7 @@
   font-weight: bold;
 }
 
-.contactoformulario {
+.formularioContacto {
   font-weight: bold;
   font-family: "open Sans";
   color: violet;
@@ -146,14 +173,7 @@
   background-color: rgb(248, 226, 248);
 }
 
-.input {
-  font-size: 0.8rem;
-  font-family: "open Sans";
-  color: rgb(51, 50, 51);
-  text-align: center;
-}
-
-.inputmensaje {
+.input, .inputmensaje {
   font-size: 0.8rem;
   font-family: "open Sans";
   color: rgb(51, 50, 51);
@@ -175,36 +195,28 @@
   text-align: center;
 }
 
-.contactohorarios {
+.horariosContacto {
   text-decoration: underline;
   font-weight: bold;
 }
 
 @media (min-width: 768px) {
-  .h1contacto {
-    font-size: 1.5rem;
-  }
   .direccion {
     font-size: 1.4rem;
   }
-  .contactoformulario {
-    font-size: 1.4rem;
+  .consultasContacto {
+    font-size: 1.5rem;
+  }
+  .formularioContacto {
+    font-size: 1.3rem;
   }
 }
 body {
-  background-color: #6f4a4a;
+  background-color: rgb(111, 74, 74);
 }
 
 a {
   text-decoration: none;
-}
-
-a:hover {
-  font-weight: bold;
-  font-style: italic;
-  transform: scale(1.2);
-  margin-left: 40px;
-  color: rgb(51, 50, 51);
 }
 
 .navbar {
@@ -212,54 +224,62 @@ a:hover {
 }
 
 footer {
-  background-image: url(../images/footer.jpg);
+  background-image: url(../images/portada4.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
   margin-top: 30px;
-  height: 250px;
+  height: 190px;
 }
 
 .logofooter {
   margin-left: 30px;
   margin-bottom: 20px;
-  background-color: rgba(225, 208, 208, 0.749);
+}
+.logofooter:hover {
+  padding-left: 20px;
 }
 
-.footerwhatsaap {
-  width: 50%;
+.whatsapp {
+  width: 70%;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   padding-top: 10px;
   margin: auto;
-  justify-content: center;
 }
 
-.whatsaap {
-  padding-left: 10px;
-  color: rgb(51, 50, 51);
+.cecularWhatsapp {
+  padding-left: 20px;
 }
 
 .redessociales {
   width: 100px;
   display: flex;
-  font-size: 2rem;
-  margin: auto;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  font-size: 2.3rem;
+  margin: auto;
+}
+.redessociales:hover {
+  padding-left: 20px;
+  transform: scale(1.1);
 }
 
-@media (min-width: 768px) {
-  .footerwhatsaap {
-    font-size: 1.5rem;
+@media (min-width: 1024px) {
+  .redessociales {
+    font-size: 2.5rem;
   }
 }
 .contenedorformulario {
   width: 60%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 20px auto;
   border-radius: 5px;
 }
@@ -271,6 +291,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .tarjetamensaje {
@@ -280,6 +301,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .contactoformulario {
@@ -287,7 +309,7 @@ footer {
   text-align: center;
 }
 
-.input {
+.input, .inputmensaje {
   width: 180px;
   height: 30px;
   border-radius: 4px;
@@ -304,18 +326,26 @@ footer {
   margin-bottom: 8px;
   width: 70%;
   margin-top: 5px;
+  resize: none;
+}
+
+.submit {
+  width: 150px;
+  margin-left: 20px;
+  margin-top: 5px;
 }
 
 .novedades {
   display: inline-block;
   margin-right: 7px auto;
+  margin-top: 5px;
 }
 
 @media (min-width: 600px) {
   .contenedorformulario {
     width: 400px;
   }
-  .input {
+  .input, .inputmensaje {
     font-size: 1rem;
   }
   .inputmensaje {
@@ -323,11 +353,12 @@ footer {
   }
 }
 .card {
-  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 250px;
+  display: flex;
   height: 400px;
   margin: 5px;
   text-align: center;
@@ -384,7 +415,7 @@ footer {
     transform: translate(50px);
   }
 }
-.productos__title {
+.productos__title, .contacto__title {
   width: 250px;
   margin: 50px auto;
   padding: 20px;
@@ -404,6 +435,9 @@ footer {
   border-radius: 10%;
   padding-bottom: 5px;
 }
+.tarjetaproductos:hover {
+  transform: translateY(-15px);
+}
 
 @media (min-width: 600px) {
   .divtarjetas {
@@ -416,8 +450,10 @@ footer {
 @media (min-width: 768px) {
   .divtarjetas {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     max-width: 800px;
     margin-bottom: 100px;
     margin-top: 70px;
@@ -426,7 +462,7 @@ footer {
     width: 45%;
     margin: 0;
   }
-  .productos__title {
+  .productos__title, .contacto__title {
     width: 300px;
   }
 }
@@ -450,13 +486,7 @@ footer {
     margin: 0;
   }
 }
-.h1contacto {
-  width: 250px;
-  margin: 50px auto;
-  padding: 10px;
-}
-
-.h2contacto {
+.consultasContacto {
   margin-bottom: 5px;
 }
 
@@ -464,10 +494,12 @@ footer {
   margin: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-.contactodirecciones {
+.direccionesContacto {
   width: 60%;
   text-align: center;
   margin: auto;
@@ -489,10 +521,10 @@ iframe {
   }
 }
 @media (min-width: 768px) {
-  .h1contacto {
+  .contacto__title {
     width: 300px;
   }
-  .contactodirecciones {
+  .direccionesContacto {
     max-width: 500px;
   }
 }
@@ -500,11 +532,11 @@ iframe {
   .contacto {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
   }
-  .contactodirecciones {
+  .direccionesContacto {
     max-width: 450px;
   }
 }

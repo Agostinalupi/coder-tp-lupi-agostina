@@ -1,21 +1,18 @@
-.h1contacto {  
-    width: 250px;
-    margin: 50px auto;
-    padding: 10px;    
+.contacto__title {  
+@extend.productos__title
 }
 
-.h2contacto {
+.consultasContacto {
     margin-bottom: 5px;
 }
 
 .contacto {
     margin: auto;
-    display: flex;
-    flex-direction: column;
+    @include dflex(column, center, center);
     flex-wrap: wrap;    
 }
 
-.contactodirecciones {
+.direccionesContacto {
     width: 60%;
     text-align: center;
     margin: auto;    
@@ -38,25 +35,22 @@ iframe {
 }
 
 @media (min-width: 768px) {            
-    .h1contacto {
+    .contacto__title {
         width: 300px;
     }
             
-    .contactodirecciones {
+    .direccionesContacto {
         max-width: 500px;
     }                         
 }
         
     @media (min-width: 1024px) {        
     .contacto {
-        display: flex;
-        flex-direction: row;
+        @include dflex(row, center, center);
         margin-top: 50px;
-        justify-content: center;
-        align-items: center;
     }
              
-    .contactodirecciones {
+    .direccionesContacto {
         max-width: 450px;
     }
 }
