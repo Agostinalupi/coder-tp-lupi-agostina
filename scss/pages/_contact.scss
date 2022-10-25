@@ -2,23 +2,21 @@
 @extend.productos__title
 }
 
+.contacto {
+    margin: auto;    
+}
+
 .consultasContacto {
     margin-bottom: 5px;
 }
 
-.contacto {
-    margin: auto;
-    @include dflex(column, center, center);
-    flex-wrap: wrap;    
-}
-
-.direccionesContacto {
+.informacionContacto {
     width: 60%;
     text-align: center;
     margin: auto;    
 }
 
-.direccion {
+.informacion {
     margin: auto;
     width: 100%;
 }
@@ -39,20 +37,17 @@ iframe {
         width: 300px;
     }
             
-    .direccionesContacto {
-        max-width: 500px;
+    .informacionContacto {
+        max-width: 450px;
     }                         
 }
         
-    @media (min-width: 1024px) {        
+@media (min-width: 1024px) {        
     .contacto {
         @include dflex(row, center, center);
         margin-top: 50px;
     }
              
-    .direccionesContacto {
-        max-width: 450px;
-    }
 }
         
            

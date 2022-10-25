@@ -20,11 +20,6 @@
     @include dflex(row, center, center); 
 }
 
-.contactoformulario {
-    margin: 20px auto;
-    text-align: center;
-}
-
 .input {
     width: 180px;
     height: 30px;
@@ -51,7 +46,6 @@
     margin-top: 5px; 
 }
 
-
 .novedades {
     display: inline-block;    
     margin-right: 7px auto;
@@ -71,6 +65,13 @@
     .inputmensaje {
         font-size: 1rem;
     }
+    }
+
+@media (min-width: 1024px) {
+    .formularioContacto {
+        margin: 15px auto;
+    }
+    
     }
 
     
