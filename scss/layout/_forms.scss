@@ -40,16 +40,26 @@
     resize: none;
  
 }
-.submit {
-    width: 150px;
-    margin-left: 20px;
-    margin-top: 5px; 
+
+.novedadesContacto {
+    @include dflex(row, center, center); 
+    flex-wrap: wrap;
 }
+.submit {    
+    text-align: center;
+    margin-top: 5px;
+    width: 50%;          
+}
+
+.inputCheckbox {
+    height: 20px;    
+    width: 50%; 
+    }
 
 .novedades {
     display: inline-block;    
-    margin-right: 7px auto;
     margin-top: 5px;   
+    text-align: center;
 }
 
 @media (min-width: 600px) {
@@ -70,8 +80,7 @@
 @media (min-width: 1024px) {
     .formularioContacto {
         margin: 15px auto;
-    }
-    
+    }    
     }
 
     
